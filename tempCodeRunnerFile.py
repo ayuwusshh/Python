@@ -1,0 +1,6 @@
+print(type(collection))
+# print(collection)
+# collection.add(5)
+# print(collection)
+# collection.remove(5)
+# print(collection)

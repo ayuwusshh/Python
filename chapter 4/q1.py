@@ -1,0 +1,11 @@
+marks={}
+sub1=input("Enter the name: ")
+val1=int(input("Enter the marks: "))
+sub2=input("Enter the name: ")
+val2=int(input("Enter the marks: "))
+sub3=input("Enter the name: ")
+val3=int(input("Enter the marks: "))
+marks.update({sub1:val1})
+marks.update({sub2:val2})
+marks.update({sub3:val3})
+print(marks)
