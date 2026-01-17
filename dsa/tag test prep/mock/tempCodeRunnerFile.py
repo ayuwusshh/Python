@@ -1,0 +1,1 @@
+    print(curr_sum)
