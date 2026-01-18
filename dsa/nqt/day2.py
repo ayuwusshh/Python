@@ -78,3 +78,60 @@
 #     temp//=10 # 9
 #   n=add
 # print(n)
+
+#7-–> Count Pairs with Given Sum
+
+# from itertools import combinations
+# num=list(map(int,input().split()))
+# k=int(input())
+# ans=0
+# for a,b in combinations(num,2):
+#   if a+b==k:
+#     ans+=1
+# print(ans)
+
+#8--> Remove Adjacent Duplicates
+# s=input()
+# ans=s[0]
+# for ch in range(1,len(s)):
+#   if s[ch]==ans[-1]:
+#     continue
+#   else:
+#     ans+=s[ch]
+# print(ans)
+
+#9-–> Check Armstrong Number
+# n=int(input())
+# prev=n
+# res=0
+# while n>0:
+#   d=n%10
+#   res+=d*d*d
+#   n//=10
+# if prev==res:
+#   print("YES")
+# else:
+#   print("NO")
+
+#10–-> Majority Element
+# num=list(map(int,input().split()))
+# n=len(num)
+# t=n/2
+# freq={}
+# for i in num:
+#   freq[i]=freq.get(i,0)+1
+#ans=-1
+# for val in num:
+#   if freq[val]>t:
+#     print(val)
+#     ans=val
+#     break
+# print(ans)
+
+#11--> Check Rotation
+# s1=input()
+# s2=input()
+# if len(s1)==len(s2) and s2 in s1+s2:
+#   print("YES")
+# else:
+#   print("NO")
