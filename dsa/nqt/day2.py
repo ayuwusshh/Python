@@ -1,56 +1,80 @@
-#10
-# n=int(input())
-# ans=0
-# while n>=10: #987
-#   temp=n    #987
-#   summ=0    #0
-#   while(temp>0):#987  98
-#     digit=temp%10  #7 8 9
-#     summ+=digit #7 15 24
-#     temp//=10 #98 9 0
-#   n=summ  #7 15 24
-#   ans=summ  # 7 15 24
-# print(ans)
-
-#11
-# import math
-# n,m=map(int,input().split())
-# print(math.gcd(n,m))
-
-#12
+# 1--> Balanced String Check
+# from collections import Counter
 # s=input()
-# arr=[]
-# count=0
+# ac=0
+# bc=0
+# freq={}
+# freq=Counter(s)
 # for ch in s:
-#   arr.append(ch)
-# for i in range(len(arr)):
-#   for j in range(2,i):
-#     if i%j!=0:
-#       count+=1
-# print(count)
-
-#13
-# n=int(input())  #16
-# ok=False
-# while n>0:  #  16
-#   if n==1:
-#     ok=True
-#     break
-#   if n%2==0:
-#     n//=2  #
-#     if n==1:  #
-#       ok=True
-#       break
+#   if ch=='a':
+#     ac=freq[ch]
 #   else:
-#     break
-# if ok:
+#     bc=freq[ch]
+# if ac==bc:
 #   print('YES')
 # else:
 #   print('NO')
 
-#14
-arr=list(map(int,input().split()))
-n=len(arr)+1
-add1=n*(n+1)//2
-add2=sum(arr)
-print(add1-add2)
+# 2--> Array Rotation by K (Right Rotation)
+# num=list(map(int,input().split()))
+# n=len(num)
+# k=int(input())
+# k=k%n
+# arr=[]
+# ans=[]
+# for i in range(n-2,n):
+#   arr.append(num[i])
+# for idx in arr:
+#   ans.append(idx)
+# for i in range(n-k-1):
+#   ans.append(num[i])
+# print(ans)
+
+#3-->First Non-Repeating Character
+# s=input()
+# freq={}
+# for ch in s:
+#   freq[ch]=freq.get(ch,0)+1
+# ok=False
+# ans=''
+# for ch in s:
+#   if freq[ch]==1:
+#     ok=True
+#     ans=ch
+#     break
+# if ok:
+#   print(ans)
+# else:
+#   print('-1')
+
+#4--> Longest Increasing CONTIGUOUS Subarray
+# num=list(map(int,input().split()))
+# ans=0
+# curr_len=0
+# max_len=0
+# for i in range(1,len(num)):
+#   if num[i]>num[i-1]:
+#     curr_len+=1
+#     max_len=max(curr_len,max_len)
+#   else:
+#     curr_len=1
+# print(max_len)
+
+#5--> Count Numbers Divisible by BOTH 3 and 5
+# num=list(map(int,input().split()))
+# count=0
+# for val in num:
+#   if val%15==0:
+#     count+=1
+# print(count)
+
+#6--> Digital Root
+# n=int(input())
+# while n>=10:  # 9999
+#   temp=n  # 9999
+#   add=0 #
+#   while temp>0: # 9
+#     add+=temp%10  # 36
+#     temp//=10 # 9
+#   n=add
+# print(n)
