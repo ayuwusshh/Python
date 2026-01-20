@@ -46,12 +46,12 @@
 # print(ans)
 
 #5
-n=int(input())
-if n<=0:
-  print(0)
-else:
-  for i in range(1,n+1):
-    if i%7==0:
-      break
-    elif i%5==0:
-      print(i)      
+# n=int(input())
+# if n<=0:
+#   print(0)
+# else:
+#   for i in range(1,n+1):
+#     if i%7==0:
+#       break
+#     elif i%5==0:
+#       print(i)      
