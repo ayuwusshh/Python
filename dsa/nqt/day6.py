@@ -51,10 +51,10 @@
 num=list(map(int,input().split()))
 n=len(num)
 ans=-1
-avg=sum(num)/n
 if n==0:
   print(ans)
 else:
+  avg=sum(num)/n
   for val in num:
     if val%2==0 and val>avg and val%4!=0:
       ans=val
