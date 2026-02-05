@@ -31,16 +31,16 @@
 # print(ans)
 
 #3
-num=list(map(int,input().split()))
-n=len(num)
-left=0
-ans=-1
-total=sum(num)
-for i in range(n):
-  right=total-left-num[i]
-  if left==right:
-    ans=num[i]
-    break
-  else:
-    left+=num[i]
-print(ans)
+# num=list(map(int,input().split()))
+# n=len(num)
+# left=0
+# ans=-1
+# total=sum(num)
+# for i in range(n):
+#   right=total-left-num[i]
+#   if left==right:
+#     ans=num[i]
+#     break
+#   else:
+#     left+=num[i]
+# print(ans)
